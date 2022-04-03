@@ -1,0 +1,38 @@
+#services {
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    padding-top: 70px;
+    box-shadow: 0 50px 50px 100px black inset; 
+    background-image: url("../../images/boxing.jpg");
+    background-size: 100% 100%;
+    background-position: 0px 100px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+}
+
+
+#services ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 50px 0 0 100px;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#services ul li {
+    margin: 10px 0;
+}
+
+
+@media (max-width: 600px){
+    #services ul {
+        font-size: 1em;
+    }
+}

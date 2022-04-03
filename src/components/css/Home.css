@@ -1,0 +1,142 @@
+#home {
+    padding-top: 70px;
+    /* height: calc(100vh - 70px); */
+    height: 100vh;
+    background-image: url("../../images/lift.jpg");
+    background-repeat: no-repeat;
+    background-size: 1000px auto;
+    background-position: 100% 100px;
+    box-shadow: 0px 0 50px 0px black inset;
+    animation: fade ease-in-out 500ms forwards;
+    z-index: -2;
+}
+
+
+#home h1 {
+margin-left: 15%;
+margin-top: 5%;
+}
+
+#we {
+    font-size: 5em;
+    /* height: 150px; */
+    line-height: 0.9em;
+    opacity: 0;
+    animation: slide 500ms ease-in-out forwards;
+}
+
+#work {
+    font-size: 3em;
+    margin-left: 80px;
+    line-height: 0.9em;
+    opacity: 0;
+    animation: slide 500ms 300ms ease-in-out forwards;
+}
+
+#magic {
+    margin-left: 160px;
+    opacity: 0;
+    animation: slide 500ms 600ms ease-in-out forwards;
+}
+
+#muscles {
+    font-size: 2em;
+    margin-left: 240px;
+    line-height: 0.9em;
+    opacity: 0;
+    animation: slide 500ms 1200ms ease-in-out forwards;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 700px){
+    #home{
+        background-position: 60% 100px;
+    }
+
+    #we {
+        font-size: 4em;
+        /* height: 150px; */
+        line-height: 0.9em;
+        opacity: 0;
+        animation: slide 500ms ease-in-out forwards;
+    }
+    
+    #work {
+        font-size: 2em;
+        margin-left: 80px;
+        line-height: 0.9em;
+        opacity: 0;
+        animation: slide 500ms 300ms ease-in-out forwards;
+    }
+    
+    #magic {
+        font-size: 0.8em;
+        margin-left: 160px;
+        opacity: 0;
+        animation: slide 500ms 600ms ease-in-out forwards;
+    }
+    
+    #muscles {
+        font-size: 1em;
+        margin-left: 270px;
+        line-height: 0.9em;
+        opacity: 0;
+        animation: slide 500ms 1200ms ease-in-out forwards;
+    }
+}
+
+@media (max-width: 550px){
+    #home h1 {
+        padding-top: 100px;
+    }
+    #we {
+        font-size: 2em;
+        /* height: 150px; */
+        line-height: 0.9em;
+        opacity: 0;
+        animation: slide 500ms ease-in-out forwards;
+    }
+    
+    #work {
+        font-size: 1em;
+        margin-left: 80px;
+        line-height: 0.9em;
+        opacity: 0;
+        animation: slide 500ms 300ms ease-in-out forwards;
+    }
+    
+    #magic {
+        font-size: 0.6em;
+        margin-left: 160px;
+        opacity: 0;
+        animation: slide 500ms 600ms ease-in-out forwards;
+    }
+    
+    #muscles {
+        font-size: 0.8em;
+        margin-left: 270px;
+        line-height: 0.9em;
+        opacity: 0;
+        animation: slide 500ms 1200ms ease-in-out forwards;
+    }
+}
